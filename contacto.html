@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleabout.css">
+    <link rel="stylesheet" href="./styles/stylecv.css">
+    <link rel="stylesheet" href="./styles/stylecontacto.css">
+</head>
+<body>
+
+    <header >
+        <div class="encabezado">
+        <img class="imagen1" src="imagen/logo.jpg" alt="logo Ronco Technology">
+        <h1 class="titulo"> Ronco Technology</h1>
+        <nav class="menu">
+           <ul><li><a class="menu_link" href="index.html">Home</a></li> 
+            <li><a class="menu_link" href="about.html">Sobre mi</a></li>
+            <li><a class="menu_link" href="cv.html">Curriculum</a></li>
+            <li><a class="menu_link" href="contacto.html">CONTACTO</a></li>
+        </ul>
+        </nav>
+        </div>
+
+    </header>
+
+
+
+    <section class="formcontato" id="contacto">
+        <div  class="formcontato__contacto">
+            <div class="formcontato--esquerda">
+                <img class="formcontato__img" src="imagen/contacto.png">
+            </div>
+            <div class="formcontato__text">
+                <h2 class="formcontato__title">Contacto</h2>
+                <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
+                <h3 class="formcontato__subtext">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible. </h3>
+                <form class="formcontato__form" name="form" action="https://formsubmit.co/roncodayana53@gmail.com" method="POST">
+                    <div class="input-container">
+                        <input class="formcontato__input" type="text" name="nombre" id="nombre" placeholder="Nombre" required data-tipo="nombre">
+                        <label class="input-label" for="nombre">Nombre</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="formcontato__input" type="email" name="email" id="email" placeholder="E-mail" required data-tipo="email">
+                        <label class="input-label" for="email">E-mail</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <input class="formcontato__input" type="text" name="asunto" id="asunto" placeholder="Asunto" required data-tipo="asunto">
+                        <label class="input-label" for="asunto">Asunto</label>
+                        <span class="input-message-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
+                        <label class="textarea-label" for="mensaje">Mensaje</label>
+                    </div>
+                    <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="piepagina">
+        <P>Desarollado por Dayana Ronco</P>
+    </footer>
+
+</body>
+</html>
+
